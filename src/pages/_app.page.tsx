@@ -18,12 +18,12 @@ const App = ({ Component, pageProps }: AppProps) => {
       enableLiveUpdates={pageProps.previewActive}
       locale={locale || 'en-US'}>
       <>
-        <main className={`${urbanist.variable} font-sans`}>
+        <main className={`bg-lightBlue ${urbanist.variable} font-sans`}>
           <Layout>
             <Component {...pageProps} />
           </Layout>
         </main>
-        <div id="portal" className={`${urbanist.variable} font-sans`} />
+        <div id="portal" className={`text-darkBlue ${urbanist.variable} font-sans`} />
       </>
     </ContentfulLivePreviewProvider>
   );
