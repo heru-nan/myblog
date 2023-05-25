@@ -13,6 +13,8 @@ export default function Document() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1109055468132758"
+     crossOrigin="anonymous"></script>
       </Head>
       <body>
         <Main />
