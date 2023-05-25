@@ -21,7 +21,7 @@ const About = () => {
       <div className="w-full max-w-sm bg-lightCream border border-lightGray rounded-lg shadow dark:bg-lightBlue dark:border-medianBlue">
         <div className="flex justify-end px-4 my-2 pt-4" />
         <div className="flex flex-col items-center pb-10">
-          <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="/docs/images/people/profile-picture-3.jpg" alt="Bonnie image" />
+          <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src="/a" alt="Bonnie" />
           <h5 className="mb-1 text-xl font-medium text-darkBlue text-darkBlue">Bonnie Green</h5>
           <span className="text-sm text-darkBlue ">Visual Designer</span>
           <div className="flex mt-4 space-x-3 md:mt-6">
