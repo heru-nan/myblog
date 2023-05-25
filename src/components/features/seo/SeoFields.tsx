@@ -18,7 +18,6 @@ export const SeoFields = ({
 }: SeoFieldsFragment) => {
   const { locale, locales, asPath } = useRouter();
 
-  console.log(locale, asPath)
   const url = ""//generateUrl(locale || '', asPath);
 
   const languageAlternates =
