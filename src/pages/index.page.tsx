@@ -20,6 +20,8 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   if (!page?.featuredBlogPost || !posts) return;
 
+  const isPostsEmpty = posts.length === 0;
+
   return (
     <>
       {page.seoFields && <SeoFields {...page.seoFields} />}
@@ -29,10 +31,19 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
         </Link>
       </Container>
 
-      <Container className="my-8  md:mb-10 lg:mb-16">
+      <Container className="my-8  md:mb-10 lg:mb-16" >
+        <div className="mb-4 md:mb-6 h-48 sm:h-32">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1109055468132758"
+     crossOrigin="anonymous"></script>
+        </div>
+      </Container>
+
+     {!isPostsEmpty && <Container className="my-8  md:mb-10 lg:mb-16">
         <h2 className="mb-4 md:mb-6">{t('landingPage.latestArticles')}</h2>
         <ArticleTileGrid className="md:grid-cols-2 lg:grid-cols-3" articles={posts} />
-      </Container>
+      </Container>}
+
+
     </>
   );
 };
