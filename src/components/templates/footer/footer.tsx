@@ -14,11 +14,25 @@ export const Footer = () => {
         <div className="mt-8">
           {t('footer.powerBy')}{' '}
           <Link
-            href="https://www.contentful.com"
+            href="https://www.instagram.com/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-dark hover:text-medianBlue mr-2">
+            Instagram
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/hernanr-gallardo-palma/"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-darkBlue hover:text-medianBlue mr-2">
+            Linkedin
+          </Link>
+          <Link
+            href="https://www.twitter.com"
             rel="noopener noreferrer"
             target="_blank"
             className="text-darkBlue hover:text-medianBlue">
-            Contentful
+            Twitter
           </Link>
         </div>
       </Container>
