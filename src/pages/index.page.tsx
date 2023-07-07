@@ -31,11 +31,9 @@ const Page = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
         </Link>
       </Container>
 
-      <Container className="my-8  md:mb-10 lg:mb-16" >
-        <div className="mb-4 md:mb-6 h-48 sm:h-32">
+      <Container className="" >
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1109055468132758"
      crossOrigin="anonymous"></script>
-        </div>
       </Container>
 
      {!isPostsEmpty && <Container className="my-8  md:mb-10 lg:mb-16">
