@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+ .iframe-container {
+  padding-bottom: 56.25%; 
+  position: relative; 
+  display: block; 
+  width: 100%;
+}
+
+.iframe-container > iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  }
+
+}
+
 @layer base {
   body {
     @apply text-sm text-gray800 md:text-sm bg-gray100;
