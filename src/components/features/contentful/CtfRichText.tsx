@@ -38,7 +38,6 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
       return <EmbeddedEntry {...entry} />;
     },
     [INLINES.HYPERLINK]: node => {
-      console.log(node.data.uri);
       if((node.data.uri).includes("youtube.com/embed")){
         return <span className="iframe-container"><iframe width="560" height="315" src={node.data.uri} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe></span>
       }

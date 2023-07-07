@@ -32,7 +32,7 @@ export const ArticleHero = ({
       <div className="flex-1 basis-1/2" {...inspectorProps({ fieldId: 'featuredImage' })}>
         {article.featuredImage && (
           <CtfImage
-            nextImageProps={{ className: 'w-full', priority: true, sizes: undefined }}
+            nextImageProps={{ className: 'object-cover aspect-[14/11] w-full h-full', priority: true, sizes: undefined }}
             {...article.featuredImage}
           />
         )}
